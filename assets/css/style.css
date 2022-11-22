@@ -2282,7 +2282,7 @@ main {
     overflow: hidden;
     left: -1px;
     top: -3px;
-    width: 545px;
+    width: 445px;
     height: 530px;
     text-align: left;
     background-color: #fff;
@@ -2304,6 +2304,7 @@ main {
 
 .mobile-map .map-box iframe {
     height: 100%;
+    overflow: hidden;
 }
 
 .contact-txt {
