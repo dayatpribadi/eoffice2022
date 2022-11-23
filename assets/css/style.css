@@ -821,7 +821,7 @@ main {
 .about-box .box-top h4 {
     margin: 0;
     margin-top: 11px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about-box .content {
@@ -876,14 +876,14 @@ main {
 }
 
 .about-box .content h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: #343791;
     z-index: 1;
 }
 
 .about-box .content p {
     color: #718096;
-    font-size: 16px;
+    font-size: 13px;
     margin: 0;
 }
 
