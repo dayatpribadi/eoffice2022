@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Modernizer Script for old Browsers -->
     <script src="assets/js/modernizr-2.6.2.min.js"></script>
+
 </head>
 
 <body>
@@ -70,12 +71,12 @@
     </header>
     <!-- End Header -->
     <!-- Start Main Sections -->
+
     <main>
 
-        <section id="blog-page" class="blog-page pdd100 mb-5">
+        <section class="blog-page pdd100 mb-5">
             <div class="container">
-                <div class="row justify-content-around">
-
+                <div class="row justify-content-center">
                     <div class="col-12">
                         <!-- Start Search Box -->
                         <div class="sidebox search-box">
@@ -85,15 +86,206 @@
                             <div class="sidebox-inner">
                                 <form action="#">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Cari berdasarkan nomor surat ...">
+                                        <input type="text" class="form-control" id="searchbox" placeholder="Cari berdasarkan nomor surat ..." onkeyup="myFunction()">
                                         <i class='bx bx-search-alt'></i>
                                     </div>
-                                    <input type="submit" value="Cari">
+                                    <input type="submit" value="Cari" id="submit">
                                 </form>
                             </div>
                         </div>
                         <!-- End Search Box -->
                     </div>
+
+                    <!-- Start Free Trial -->
+                    <div id="page-not-found" class="free-trial rounded mb-3 box search-1 d-none">
+                        <div class="container is-hidden">
+                            <div class="row align-items-center justify-content-center p-4">
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="free-trial-txt-not-found">
+                                        <h3>Surat dengan nomor <span>44</span> tidak ditemukan</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="free-trial-bttn-not-found justify-content-end">
+                                        <a href="#"><i class='bx bx-error-alt me-2' style="font-size: 24px;"></i>Not Found</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Free Trial -->
+
+                    <!-- Start Free Trial -->
+                    <div id="page-on-process" class="free-trial rounded mb-3 box search-2 d-none">
+                        <div class="container is-hidden">
+                            <div class="row align-items-center justify-content-center p-4">
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="free-trial-txt-process">
+                                        <h3>Surat dengan nomor <span>44 (Nomor Register JMX24UI)</span> masih dalam proses</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="free-trial-bttn-process justify-content-end">
+                                        <a href="#"><i class='bx bx-message-alt-edit me-2' style="font-size: 24px;" ></i>On Process</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Free Trial -->
+
+                    <div id="page-success" class="row justify-content-around p-0 mb-3 box search-3 d-none">
+
+                        <!-- Start Free Trial -->
+                        <div class="free-trial rounded mb-5">
+                            <div class="container is-hidden">
+                                <div class="row align-items-center p-4">
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="free-trial-txt">
+                                            <h3>Surat dengan nomor <span>440/4636/II/KES/2022</span> (Nomor register <span>M2JLYTU2 </span> ) terdaftar pada sistem dan <br class="d-none d-md-block">  telah ditandatangani secara elektronik.</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="free-trial-bttn justify-content-end align-items-center">
+                                            <a href="#"><i class='bx bx-check-shield bx-lg me-2' style="font-size: 24px;"></i>Registered Successfully</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Free Trial -->
+    
+    
+                        <!-- Start About Section -->
+                        <div class="about">
+                            <div class="container">
+                                <!-- Start Section Title -->
+                                <div class="section-title">
+                                    <h2>Informasi Surat</h2>
+                                    <p>Informasi data surat dinas elektronik</p>
+                                </div>
+                                <!-- End Section Title -->
+                                <!-- Start About Boxes -->
+                                <div class="about-boxes">
+                                    <div class="row">
+                                        <!-- Start One Item -->
+                                        <div class="col-lg-4 col-12 col-sm-6">
+                                            <div class="about-box">
+                                                <div class="box-top">
+                                                    <i class='bx bx-sort-a-z'></i>
+                                                    <h4>Nomor Surat</h4>
+                                                </div>
+                                                <div class="content">
+                                                    <i class='bx bx-sort-a-z bx-tada'></i>
+                                                    <h3>Nomor Surat : 440/4636/II/KES/2022 </h3>
+                                                    <p>Nomor Register Surat : <span style="font-size: 20px; color:#22b973; font-weight: bold;">M2JLYTU2</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End One Item -->
+                                        <!-- Start One Item -->
+                                        <div class="col-lg-4 col-12 col-sm-6">
+                                            <div class="about-box">
+                                                <div class="box-top">
+                                                    <i class='bx bx-mail-send'></i>
+                                                    <h4>Jenis Surat</h4>
+                                                </div>
+                                                <div class="content">
+                                                    <i class='bx bx-mail-send bx-tada'></i>
+                                                    <!-- Start Post Tumb -->
+                                                    <div class="post-tumb">
+                                                        <div href="#">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="tumb-txt">
+                                                                        <h5>Jenis Surat</h5>
+                                                                        <span>Surat Perintah Tugas (Sekda Atau Kepala PD)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Post Tumb -->
+                                                    <!-- Start Post Tumb -->
+                                                    <div class="post-tumb">
+                                                        <div href="#">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="tumb-txt">
+                                                                        <h5>Perihal</h5>
+                                                                        <span>Perjadin Pembinaan KPM terkait 1000 HPK di Puskesmas Rantau Panjang</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Post Tumb -->
+                                                    <!-- Start Post Tumb -->
+                                                    <div class="post-tumb">
+                                                        <div href="#">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="tumb-txt">
+                                                                        <h5>Sifat Surat</h5>
+                                                                        <span>Penting/Biasa/ext..</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Post Tumb -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End One Item -->
+                                        <!-- Start One Item -->
+                                        <div class="col-lg-4 col-12 col-sm-6">
+                                            <div class="about-box">
+                                                <div class="box-top">
+                                                    <i class='bx bx-group'></i>
+                                                    <h4>Responden</h4>
+                                                </div>
+                                                <div class="content">
+                                                    <i class='bx bx-group bx-tada'></i>
+                                                    <h3>Pengirim Surat : Dinas Kesehatan </h3>
+                                                    <p>Dikirim Tanggal : <span style="font-size: 20px; color:#22b973; font-weight: bold;">20 Nov 2022</span></p>
+                                                    <br>
+                                                    <h3>Penerima Surat : Dinas Kesehatan </h3>
+                                                    <p>Diterima Tanggal : <span style="font-size: 20px; color:#22b973; font-weight: bold;">20 Nov 2022</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        <!-- End One Item -->
+                                        
+                                    </div>
+                                </div>
+                                <!-- End About Boxes -->
+                            </div><!-- </container> -->
+                        </div>
+                        <!-- End About Section -->
+
+                        <!-- Start Posts Boxes -->
+                        <div class="col-12">
+                            <!-- Start Post Box -->
+                            <div class="post-box">
+                                <iframe src="assets/doc/Surat.pdf" style="width: 100%; height: 100vh; border: none;"></iframe>
+                            </div>
+                            <!-- End Post Box -->
+                            <button type="button" class="btn bttn dblue"><i class="bx bx-cloud-download"></i>
+                                download
+                            </button>
+                        </div>
+                        <!-- End Posts Boxes -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class=" d-none blog-page pdd100">
+            <div class="container">
+                <div class="row justify-content-around">
 
                     <!-- Start Free Trial -->
                     <div class="free-trial rounded">
@@ -105,14 +297,15 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4">
-                                    <div class="free-trial-bttn justify-content-end">
-                                        <a href="#"><i class='bx bx-check-shield bx-lg me-2'></i>Registered Successfully</a>
+                                    <div class="free-trial-bttn justify-content-end align-items-center">
+                                        <a href="#"><i class='bx bx-check-shield bx-lg me-2' style="font-size: 24px;"></i>Registered Successfully</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Free Trial -->
+
 
                     <!-- Start About Section -->
                     <div id="about" class="about mt-5">
@@ -363,7 +556,7 @@
                     <!-- End Posts Boxes -->
                 </div>
             </div>
-        </section>
+        </div>
         
         <!-- Start Contact Form -->
         <section id="contact-form" class="contact-form pdd100">
@@ -528,6 +721,43 @@
     <script src="assets/js/particles-lines.js"></script>
     <!-- App JS -->
     <script src="assets/js/app.js"></script>
+    <script>
+        function myFunction() {
+        // Declare variables
+            var form, input, filter, div, a, txtValue;
+            input = document.getElementById('searchbox');
+            filter = input.value.toUpperCase();
+            section = document.getElementsByClassName("box");
+            div = section.getElementsByClassName('is-hidden');
+            
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < div.length; i++) {
+                input = div[i].getElementById('searchbox')[0];
+                txtValue = input.textContent || input.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                div[i].style.display = "";
+                } else {
+                div[i].style.display = "none";
+                }
+            }
+        }
+
+        $("#submit").click(function(){
+            var search = $('#searchbox').val();
+
+            $(".search-1").removeClass("d-block").addClass("d-none");
+            $(".search-2").removeClass("d-block").addClass("d-none");
+            $(".search-3").removeClass("d-block").addClass("d-none");
+
+            if(search == '1') {
+                $(".search-1").removeClass("d-none").addClass("d-block");
+            } else if(search == 2) {
+                $(".search-2").removeClass("d-none").addClass("d-block");
+            } else if(search == 3) {
+                $(".search-3").removeClass("d-none").addClass("d-block");
+            }
+        });
+    </script>
 </body>
 
 </html>

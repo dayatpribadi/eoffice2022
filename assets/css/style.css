@@ -728,7 +728,7 @@ main {
 /* Header Image */
 
 .header.header-image {
-    background: url('https://via.placeholder.com/1920x1280') no-repeat center center fixed;
+    background: url('../img/e-office/bg-1.png') no-repeat center center fixed;
     background-size: cover;
     border-radius: 0;
 }
@@ -1471,7 +1471,7 @@ main {
 ==================================================================*/
 
 .download {
-    background: url('https://via.placeholder.com/1920x1280') no-repeat center center;
+    background: url('../img/e-office/bg-1.png') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -2665,7 +2665,7 @@ main {
 ==================================================================*/
 
 .inner-header {
-    background: url('https://via.placeholder.com/1920x1280') no-repeat center center fixed;
+    background: url('../img/e-office/bg-1.png') no-repeat center bottom fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -2834,6 +2834,53 @@ main {
     box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
 }
 
+
+.free-trial-txt-not-found {
+    justify-content: center;
+    align-items: center;
+}
+
+.free-trial-txt-process h3 {
+    margin: 0;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.free-trial-txt-process h3 span {
+    color: #e7a83c;
+    font-weight: 600;
+}
+
+.free-trial-bttn-process a {
+    display: inline-block;
+    background: #e7a83c;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+}
+
+.free-trial-txt-not-found h3 {
+    margin: 0;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.free-trial-bttn-not-found a {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+}
+
+.free-trial-txt-not-found h3 span {
+    color: #e74c3c;
+    font-weight: 600;
+}
 /* Blog Sidebar */
 
 .sidebox-boxes {
