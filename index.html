@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/vendors/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/vendors/lity/css/lity.min.css">
+    <link rel="stylesheet" href="assets/sweetalert2/dist/sweetalert2.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Modernizer Script for old Browsers -->
@@ -393,7 +394,7 @@
                             <div class="row">
                                 <!-- Start Contact Form -->
                                 <div class="col-md-7 col-sm-7">
-                                    <form id="contact-action" method="post" action="#">
+                                    <form>
                                         <div class="input-group mb-3">
                                             <input id="name" name="name" type="text" class="form-control" placeholder="Full Name" required>
                                         </div>
@@ -413,8 +414,19 @@
                                             Sorry, an error occurred. Try later :(
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="submit" id="contact-submit" name="submit" value="Submit">
+                                            <button type="button" class="btn btn-primary" name="submit" value="Submit" onclick="test()">TEST</button>
                                         </div>
+
+                                        <script>
+                                            function test() {
+                                              Swal.fire({
+                                                position: 'center',
+                                                icon: 'success',
+                                                title: 'Data berhasil disimpan',
+                                                timer: 1500
+                                              })
+                                            }
+                                          </script>
                                     </form>
                                 </div>
                                 <!-- End Contact Form -->
@@ -537,8 +549,21 @@
     <script src="assets/vendors/lity/js/lity.min.js"></script>
     <script src="assets/vendors/particles/particles.min.js"></script>
     <script src="assets/js/particles-lines.js"></script>
+    <script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <!-- App JS -->
     <script src="assets/js/app.js"></script>
+
+    <script>
+        $(function () {
+          var Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        });
+      </script>
+    
 </body>
 
 </html>
